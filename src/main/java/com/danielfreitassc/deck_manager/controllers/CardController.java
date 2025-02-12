@@ -48,7 +48,7 @@ public class CardController {
     }
 
     @DeleteMapping("/{id}")
-    public CardResponseDto deleteById(@PathVariable String id) {
+    public CardResponseDto deleteById(@PathVariable String id) throws Exception {
         return cardService.deleteById(id);
     }
 }

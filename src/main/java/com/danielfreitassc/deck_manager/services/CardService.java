@@ -17,6 +17,7 @@ import com.danielfreitassc.deck_manager.repositories.CardRepository;
 
 import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
+import io.minio.RemoveObjectArgs;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -79,8 +80,16 @@ public class CardService {
         return cardMapper.toDto(cardEntity);
     }
 
-    public CardResponseDto deleteById(String id) {
+    public CardResponseDto deleteById(String id) throws Exception {
         CardEntity cardEntity = checkId(id);
+
+        minioClient.removeObject(
+            RemoveObjectArgs.builder()
+            .bucket("images")
+            .object(cardEntity.getImageId())
+            .build()
+        );
+
         cardRepository.delete(cardEntity);
         return cardMapper.toDto(cardEntity);
     }
