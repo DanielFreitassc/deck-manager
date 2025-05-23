@@ -161,4 +161,3 @@ A imagem correspondente ao **imageId** será retornada no formato original (exem
 Esta documentação cobre a instalação, configuração e os endpoints da API **Deck Manager**. Se precisar de mais informações ou melhorias, entre em contato!
 
 
-
