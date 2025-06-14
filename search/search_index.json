@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Como rodar","text":"<p>para rodar o projeto bla bla bla </p> <ul> <li> <p>bla </p> </li> <li> <p>bla </p> </li> </ul>"},{"location":"modelagemDB/","title":"Modelagem dimensional DB","text":""}]}
