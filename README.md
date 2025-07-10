@@ -155,6 +155,7 @@ Este endpoint recebe os seguintes parâmetros via **form-data**:
 #### Resposta:
 A imagem correspondente ao **imageId** será retornada no formato original (exemplo: `foto.png`).
 
+
 ---
 
 ## Conclusão
